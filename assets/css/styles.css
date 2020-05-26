@@ -1,0 +1,9 @@
+.brooke-header#header {
+  background-image: url("../../images/brooke/pic1.jpg");
+  background-position: 50% 15%;
+}
+
+.about-me-card {
+  background-position: 50% 10%;
+  background-image: url("../../images/brooke/pic1.jpg");
+}
