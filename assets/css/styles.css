@@ -48,21 +48,6 @@
   display: none;
 }
 
-@media only screen and (max-width: 600px) {
-  #my-form {
-    width: 300px;
-  }
-
-  #my-form-button {
-    width: 300px;
-  }
-}
-
-.services {
-  /* list-style-type: none; */
-  max-width: 450px;
-}
-
 .testimonial-quote-block {
   margin-bottom: 20px;
 }
@@ -84,4 +69,28 @@
   display: flex;
   text-align: left;
   justify-content: center;
+}
+
+.services {
+  /* list-style-type: none; */
+  max-width: 450px;
+}
+
+.portfolio-image {
+  max-width: 90%;
+}
+
+@media only screen and (max-width: 600px) {
+  #my-form {
+    width: 300px;
+  }
+
+  #my-form-button {
+    width: 300px;
+  }
+
+  .services-wrapper {
+    flex-direction: column;
+    max-width: 300px;
+  }
 }
