@@ -42,28 +42,20 @@
           campaign: simple, strategic, and professional.
         </p>
       </section>
+
       <!-- CTA -->
-      <section id="cta" class="main special">
+      <section id="cta" class="main special form-wrapper">
         <h2>Reach out to me to hear more</h2>
         <form id="my-form" action="https://formspree.io/mjvaywej" method="POST">
           <label>Email:</label>
           <input type="email" name="email" />
           <label>Message:</label>
-          <input type="text" name="message" />
+          <textarea type="text" name="message"></textarea>
           <button id="my-form-button">Submit</button>
           <p id="my-form-status"></p>
         </form>
+        <h4 id="thanks">Thanks! You'll hear from me soon.</h4>
       </section>
-
-      <!-- Main -->
-      <!--
-					<section id="main" class="main">
-						<header>
-							<h2>Lorem ipsum dolor</h2>
-						</header>
-						<p>Fusce malesuada efficitur venenatis. Pellentesque tempor leo sed massa hendrerit hendrerit. In sed feugiat est, eu congue elit. Ut porta magna vel felis sodales vulputate. Donec faucibus dapibus lacus non ornare. Etiam eget neque id metus gravida tristique ac quis erat. Aenean quis aliquet sem. Ut ut elementum sem. Suspendisse eleifend ut est non dapibus. Nulla porta, neque quis pretium sagittis, tortor lacus elementum metus, in imperdiet ante lorem vitae ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam eget neque id metus gravida tristique ac quis erat. Aenean quis aliquet sem. Ut ut elementum sem. Suspendisse eleifend ut est non dapibus. Nulla porta, neque quis pretium sagittis, tortor lacus elementum metus, in imperdiet ante lorem vitae ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-					</section>
-				-->
 
       <!-- Footer -->
       <footer id="footer">
@@ -96,35 +88,26 @@
     <script src="assets/js/main.js"></script>
     <script>
       window.addEventListener("DOMContentLoaded", function () {
-        // get the form elements defined in your form HTML above
-
         var form = document.getElementById("my-form");
         var button = document.getElementById("my-form-button");
         var status = document.getElementById("my-form-status");
-
-        // Success and Error functions for after the form is submitted
+        var thanksMessage = document.getElementById("thanks");
 
         function success() {
           form.reset();
-          button.style = "display: none ";
-          status.innerHTML = "Thanks!";
+          thanksMessage.style = "display: block ";
+          form.style = "display: none ";
         }
 
         function error() {
           status.innerHTML = "Oops! There was a problem.";
         }
-
-        // handle the form submission event
-
         form.addEventListener("submit", function (ev) {
           ev.preventDefault();
           var data = new FormData(form);
           ajax(form.method, form.action, data, success, error);
         });
       });
-
-      // helper function for sending an AJAX request
-
       function ajax(method, url, data, success, error) {
         var xhr = new XMLHttpRequest();
         xhr.open(method, url);
