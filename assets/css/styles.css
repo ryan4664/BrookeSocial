@@ -3,6 +3,11 @@
   background-position: 50% 15%;
 }
 
+.testimonial-header#header {
+  background-image: url("../../images/testimonial.jpg");
+  background-position: 50% 15%;
+}
+
 .about-me-card {
   background-position: 50% 10%;
   background-image: url("../../images/brooke/pic1.jpg");
@@ -37,4 +42,8 @@
 
 #thanks {
   display: none;
+}
+
+#testimonial-quote {
+  padding-bottom: 10px;
 }
