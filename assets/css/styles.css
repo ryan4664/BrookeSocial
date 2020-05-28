@@ -48,10 +48,6 @@
   display: none;
 }
 
-#testimonial-quote {
-  padding-bottom: 10px;
-}
-
 @media only screen and (max-width: 600px) {
   #my-form {
     width: 300px;
@@ -60,4 +56,25 @@
   #my-form-button {
     width: 300px;
   }
+}
+
+.services {
+  list-style-type: none;
+}
+
+.testimonial-quote-block {
+  margin-bottom: 10px;
+}
+
+.testimonial-quote-block > p {
+  margin-bottom: 0;
+}
+
+.testimonial-quote-block > p:first-child {
+  text-align: left;
+}
+
+.testimonial-quote-block > p:last-child {
+  text-align: right;
+  font-style: italic;
 }
