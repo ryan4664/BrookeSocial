@@ -8,6 +8,15 @@
   background-position: 50% 15%;
 }
 
+.services-header#header {
+  background-image: url("../../images/services.jpg");
+  background-position: 50% 15%;
+}
+
+.portfolio-header#header {
+  background-image: url("../../images/portfolio.jpg");
+}
+
 .about-me-card {
   background-position: 50% 10%;
   background-image: url("../../images/brooke/pic1.jpg");
@@ -72,12 +81,54 @@
 }
 
 .services {
-  /* list-style-type: none; */
-  max-width: 450px;
+  list-style-type: none;
+  text-align: left;
+  padding-left: 0px;
+}
+
+.services > li:before {
+  content: "-";
+  padding-right: 20px;
 }
 
 .portfolio-image {
   max-width: 90%;
+}
+
+#header.alt h1 > a {
+  padding-left: 0;
+  padding-right: 0;
+  border: none;
+}
+
+#header.alt h1 > a:hover {
+  color: #333 !important;
+}
+
+.services-content-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.services-content-wrapper > div > h4 {
+  text-align: left;
+}
+
+.text-left {
+  text-align: left;
+}
+
+#footer {
+  margin-top: 2em;
+}
+
+#footer:before {
+  margin-bottom: 2em;
+}
+
+.icons > li > a {
+  font-size: 70px;
 }
 
 @media only screen and (max-width: 600px) {
