@@ -71,6 +71,7 @@
 
 .testimonial-quote-block > p:nth-child(2) {
   text-align: left;
+  margin-top: 10px;
 }
 
 .testimonial-quote-block > p:last-child {
