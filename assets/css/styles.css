@@ -131,6 +131,10 @@
   font-size: 70px;
 }
 
+.icons > li > a:hover {
+  color: #333 !important;
+}
+
 @media only screen and (max-width: 600px) {
   #my-form {
     width: 300px;
