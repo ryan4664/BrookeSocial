@@ -107,12 +107,12 @@
 
 .services-content-wrapper {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .services-content-wrapper > div > h4 {
-  text-align: left;
+  text-align: center;
 }
 
 .text-left {
