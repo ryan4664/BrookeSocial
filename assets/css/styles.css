@@ -140,6 +140,10 @@
   color: #333 !important;
 }
 
+.authentic-text {
+  font-family: 'Abril Fatface', cursive;
+}
+
 @media only screen and (max-width: 600px) {
   #my-form {
     width: 300px;
