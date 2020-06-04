@@ -140,7 +140,7 @@
   color: #333 !important;
 }
 
-.authentic-text {
+.authentic-text, .influence-text {
   font-family: 'Abril Fatface', cursive;
 }
 
