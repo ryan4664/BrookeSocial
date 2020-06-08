@@ -140,9 +140,29 @@
   color: #333 !important;
 }
 
-/* .authentic-text {
-  font-family: 'Abril Fatface', cursive;
-} */
+.authentic-text {
+  font-family: "Abril Fatface", sans-serif;
+}
+
+
+.title-wrapper {
+  border-bottom: solid 2px #ffffff;
+}
+
+.sub-heading {
+  margin-top: 40px
+}
+
+@font-face {
+  font-family: "MoonTime";
+  src: url("../fonts/MoonTime-Regular.ttf"); /* IE9 Compat Modes */
+  src: url("../fonts/MoonTime-Regular.ttf") format("truetype");
+}
+
+.influence-text {
+  font-family: "MoonTime", sans-serif;
+  font-size: 200px;
+}
 
 @media only screen and (max-width: 600px) {
   #my-form {
