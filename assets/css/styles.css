@@ -153,6 +153,11 @@
   margin-top: 40px
 }
 
+.contact-text {
+  font-size: 12px;
+  font-style: italic;
+}
+
 @font-face {
   font-family: "MoonTime";
   src: url("../fonts/MoonTime-Regular.ttf"); /* IE9 Compat Modes */
