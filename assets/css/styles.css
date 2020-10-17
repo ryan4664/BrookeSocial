@@ -1,5 +1,5 @@
 .brooke-header#header {
-  background-image: url("../../images/brooke/pic1.jpg");
+  background-image: url("../../images/services.jpg");
   background-position: 50% 15%;
 }
 
@@ -144,18 +144,38 @@
   font-family: "Abril Fatface", sans-serif;
 }
 
-
 .title-wrapper {
   border-bottom: solid 2px #ffffff;
 }
 
 .sub-heading {
-  margin-top: 40px
+  margin-top: 40px;
 }
 
 .contact-text {
   font-size: 12px;
   font-style: italic;
+}
+
+.team-member-container {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+}
+
+.profile-pic  {
+  flex: 2;
+}
+
+.profile-text  {
+  flex: 2;
+  padding: 0 10px;
+  
+}
+
+.brooke-profile-pic {
+  width: 100%;
+  padding: 0 10px;
 }
 
 @font-face {
@@ -185,5 +205,8 @@
 
   .influence-text {
     font-size: 80px;
+  }
+  .team-member-container {
+    flex-direction: column;
   }
 }
